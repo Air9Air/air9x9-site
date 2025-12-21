@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Air9x9.com</title>
+  <style>:root{
+  --bg:#000000;
+  --panel:#060606;
+  --panel2:#0a0a0a;
+  --text:#eaeaea;
+  --muted:#9a9a9a;
+  --line:#1a1a1a;
+  --line2:#101010;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+.wrap{max-width:1100px;margin:0 auto;padding:26px 18px 60px}
+.header{
+  display:flex;justify-content:center;align-items:center;
+  padding:18px 0 20px;
+  margin-bottom:18px;
+}
+.brand{
+  font-weight:950;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#ffffff;
+}
+
+/* Section */
+.section{
+  background:#000000;
+  border:1px solid #000000;
+  border-radius:18px;
+  padding:16px;
+  margin:14px 0;
+}
+.section h2{
+  margin:0 0 12px;
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#000000;
+  user-select:none;
+}
+.section.open{
+  background: linear-gradient(180deg, var(--panel2), var(--panel));
+  border-color: var(--line);
+}
+.section.open h2{ color:#8f8f8f; }
+
+/* Table */
+table{width:100%; border-collapse:collapse; border-radius:14px; overflow:hidden}
+thead th{
+  padding:12px 12px;
+  text-align:right;
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:900;
+  color:#000000;
+  border-bottom:1px solid #000000;
+  user-select:none;
+}
+thead th:first-child{text-align:left}
+.section.open thead th{
+  color: var(--muted);
+  border-bottom-color: var(--line2);
+}
+
+tbody td{
+  padding:14px 12px;
+  text-align:right;
+  vertical-align:top;
+  border-bottom:1px solid #000000;
+  background:#000000;
+}
+tbody td:first-child{text-align:left}
+
+/* Ligne active */
+tbody tr.open td{
+  background:#0b0b0b;
+  border-bottom-color: var(--line);
+}
+
+/* Noms */
+.rowname{ color:#000000; letter-spacing:.02em; user-select:none; }
+tr.open .rowname{ color:#bdbdbd; }
+
+/* Prix + durée inline */
+.pricewrap{
+  display:inline-flex;
+  align-items:baseline;
+  gap:6px;
+  white-space:nowrap;
+  user-select:none;
+}
+.dur{
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#000000;
+}
+.sep{
+  font-size:11px;
+  color:#000000;
+}
+.pay{
+  font-weight:950;
+  letter-spacing:.03em;
+  color:#000000;
+  text-decoration:none;
+}
+
+/* Fantômes */
+tr.open .pay{ color:#141414; }
+tr.open .dur{ color:#0f0f0f; }
+tr.open .sep{ color:#0f0f0f; }
+
+/* Lit (bat le fantôme) */
+tr.open .pricewrap.lit .pay,
+.pricewrap.lit .pay{
+  color:#ffffff;
+  text-shadow: 0 0 16px #111111;
+}
+tr.open .pricewrap.lit .dur,
+.pricewrap.lit .dur{ color:#cfcfcf; }
+tr.open .pricewrap.lit .sep,
+.pricewrap.lit .sep{ color:#7a7a7a; }
+
+/* Mail entre blocs */
+.midmail{
+  text-align:center;
+  margin:10px 0 2px;
+  color:#4f4f4f;
+  font-size:12px;
+  letter-spacing:.08em;
+}
+.midmail a{ color:#6a6a6a; text-decoration:none; }
+.midmail a:hover{ color:#ffffff; }</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header"><div class="brand">Air9x9.com</div></div>
+
+    <section class="section" data-section="1">
+      <h2>LICENTIA AIR.9x9</h2>
+      <table>
+        <thead><tr>
+      <th>AIR.9X9</th>
+      <th>Privé</th><th>Pro</th><th>Club</th>
+    </tr></thead>
+        <tbody><tr>
+        <td><span class="rowname">Air.Dies</span></td>
+        <td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td>
+      </tr><tr>
+        <td><span class="rowname">Air.Nox</span></td>
+        <td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td>
+      </tr><tr>
+        <td><span class="rowname">Air.Lux</span></td>
+        <td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td><td><span class="pricewrap" data-wrap="1"><span class="pay">0</span></span></td>
+      </tr></tbody>
+      </table>
+    </section>
+
+    <div class="midmail"><a href="mailto:air@air9x9.com">air@air9x9.com</a></div>
+
+    <section class="section" data-section="1">
+      <h2>Licentia Air.Dies</h2>
+      <table>
+        <thead><tr><th>Nom</th><th>Air.mm</th><th>Air.m</th><th>Air.km</th></tr></thead>
+        <tbody>
+      <tr>
+        <td><span class="rowname">Air.Dies1.0</span></td>
+        <td><span class="pay">0</span></td><td><span class="pay">0</span></td><td><span class="pay">0</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies2.0</span></td>
+        <td><span class="pay">1</span></td><td><span class="pay">1</span></td><td><span class="pay">1</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies3.0</span></td>
+        <td><span class="pay">1</span></td><td><span class="pay">1</span></td><td><span class="pay">1</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies4.0</span></td>
+        <td><span class="pay">2</span></td><td><span class="pay">4</span></td><td><span class="pay">8</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies5.0</span></td>
+        <td><span class="pay">3</span></td><td><span class="pay">9</span></td><td><span class="pay">27</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies6.0</span></td>
+        <td><span class="pay">5</span></td><td><span class="pay">25</span></td><td><span class="pay">125</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies7.0</span></td>
+        <td><span class="pay">8</span></td><td><span class="pay">64</span></td><td><span class="pay">512</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies8.0</span></td>
+        <td><span class="pay">13</span></td><td><span class="pay">169</span></td><td><span class="pay">2&nbsp;197</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Dies9.0</span></td>
+        <td><span class="pay">21</span></td><td><span class="pay">441</span></td><td><span class="pay">9&nbsp;261</span></td>
+      </tr>
+    </tbody>
+      </table>
+    </section>
+    <section class="section" data-section="1">
+      <h2>Licentia Air.Nox</h2>
+      <table>
+        <thead><tr><th>Nom</th><th>Air.sec</th><th>Air.min</th><th>Air.h</th></tr></thead>
+        <tbody>
+      <tr>
+        <td><span class="rowname">Air.Nox1.0</span></td>
+        <td><span class="pay">34</span></td><td><span class="pay">1&nbsp;156</span></td><td><span class="pay">39&nbsp;304</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox2.0</span></td>
+        <td><span class="pay">55</span></td><td><span class="pay">3&nbsp;025</span></td><td><span class="pay">166&nbsp;375</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox3.0</span></td>
+        <td><span class="pay">89</span></td><td><span class="pay">7&nbsp;921</span></td><td><span class="pay">704&nbsp;969</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox4.0</span></td>
+        <td><span class="pay">144</span></td><td><span class="pay">20&nbsp;736</span></td><td><span class="pay">2&nbsp;985&nbsp;984</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox5.0</span></td>
+        <td><span class="pay">233</span></td><td><span class="pay">54&nbsp;289</span></td><td><span class="pay">12&nbsp;649&nbsp;337</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox6.0</span></td>
+        <td><span class="pay">377</span></td><td><span class="pay">142&nbsp;129</span></td><td><span class="pay">53&nbsp;582&nbsp;633</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox7.0</span></td>
+        <td><span class="pay">610</span></td><td><span class="pay">372&nbsp;100</span></td><td><span class="pay">226&nbsp;981&nbsp;000</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox8.0</span></td>
+        <td><span class="pay">987</span></td><td><span class="pay">974&nbsp;169</span></td><td><span class="pay">961&nbsp;504&nbsp;803</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Nox9.0</span></td>
+        <td><span class="pay">1&nbsp;597</span></td><td><span class="pay">2&nbsp;550&nbsp;409</span></td><td><span class="pay">4&nbsp;073&nbsp;676&nbsp;409</span></td>
+      </tr>
+    </tbody>
+      </table>
+    </section>
+<section class="section" data-section="1">
+      <h2>Licentia Air.Lux</h2>
+      <table>
+        <thead><tr><th>Nom</th><th>Air.mm-sec</th><th>Air.m-min</th><th>Air.km-h</th></tr></thead>
+        <tbody>
+      <tr>
+        <td><span class="rowname">Air.Lux1.0</span></td>
+        <td><span class="pay">2&nbsp;584</span></td><td><span class="pay">6&nbsp;676&nbsp;225</span></td><td><span class="pay">17&nbsp;258&nbsp;883&nbsp;125</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux2.0</span></td>
+        <td><span class="pay">4&nbsp;181</span></td><td><span class="pay">17&nbsp;480&nbsp;761</span></td><td><span class="pay">73&nbsp;113&nbsp;611&nbsp;641</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux3.0</span></td>
+        <td><span class="pay">6&nbsp;765</span></td><td><span class="pay">45&nbsp;765&nbsp;625</span></td><td><span class="pay">309&nbsp;787&nbsp;365&nbsp;927</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux4.0</span></td>
+        <td><span class="pay">10&nbsp;946</span></td><td><span class="pay">119&nbsp;814&nbsp;916</span></td><td><span class="pay">1&nbsp;312&nbsp;153&nbsp;474&nbsp;611</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux5.0</span></td>
+        <td><span class="pay">17&nbsp;711</span></td><td><span class="pay">313&nbsp;679&nbsp;521</span></td><td><span class="pay">5&nbsp;559&nbsp;060&nbsp;566&nbsp;555</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux6.0</span></td>
+        <td><span class="pay">28&nbsp;657</span></td><td><span class="pay">821&nbsp;223&nbsp;649</span></td><td><span class="pay">23&nbsp;561&nbsp;844&nbsp;590&nbsp;383</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux7.0</span></td>
+        <td><span class="pay">46&nbsp;368</span></td><td><span class="pay">2&nbsp;149&nbsp;911&nbsp;424</span></td><td><span class="pay">99&nbsp;888&nbsp;658&nbsp;365&nbsp;125</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux8.0</span></td>
+        <td><span class="pay">75&nbsp;025</span></td><td><span class="pay">5&nbsp;628&nbsp;750&nbsp;625</span></td><td><span class="pay">423&nbsp;429&nbsp;431&nbsp;486&nbsp;121</span></td>
+      </tr>
+    
+      <tr>
+        <td><span class="rowname">Air.Lux9.0</span></td>
+        <td><span class="pay">121&nbsp;393</span></td><td><span class="pay">14&nbsp;736&nbsp;200&nbsp;449</span></td><td><span class="pay">1&nbsp;794&nbsp;317&nbsp;945&nbsp;976&nbsp;784</span></td>
+      </tr>
+    </tbody>
+      </table>
+    </section>
+  </div>
+  <script>(function(){
+  let litWrap = null;
+
+  function clearLit(){
+    if (litWrap){
+      litWrap.classList.remove("lit");
+      litWrap = null;
+    }
+  }
+  function openSection(section){ if (section) section.classList.add("open"); }
+  function toggleSection(section){ if (section) section.classList.toggle("open"); }
+  function openRow(tr){ if (tr) tr.classList.add("open"); }
+  function toggleRow(tr){
+    if (!tr) return;
+    tr.classList.toggle("open");
+    if (!tr.classList.contains("open") && litWrap && tr.contains(litWrap)) clearLit();
+  }
+
+  // 1) Section toggle (clic hors tbody)
+  document.querySelectorAll("section.section[data-section='1']").forEach(section => {
+    section.addEventListener("click", (e) => {
+      const inTbody = !!(e.target.closest && e.target.closest("tbody"));
+      if (inTbody) return;
+
+      if (e.target && e.target.closest && e.target.closest("[data-pay='1']")) return;
+      if (e.target && e.target.classList && e.target.classList.contains("pay")) return;
+
+      toggleSection(section);
+      if (!section.classList.contains("open")){
+        section.querySelectorAll("tbody tr.open").forEach(tr => tr.classList.remove("open"));
+        clearLit();
+      }
+    }, {passive:false});
+  });
+
+  // 2) Ligne toggle
+  document.querySelectorAll("section.section tbody tr").forEach(tr => {
+    tr.addEventListener("click", (e) => {
+      if (e.target && e.target.closest && e.target.closest("[data-pay='1']")) return;
+      if (e.target && e.target.classList && e.target.classList.contains("pay")) return;
+
+      const section = tr.closest("section.section");
+      openSection(section);
+      toggleRow(tr);
+    }, {passive:false});
+  });
+
+  // 3) Sans lien : lit sur wrapper
+  document.querySelectorAll("section.section .pay:not([data-pay='1'])").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const tr = el.closest("tr");
+      const section = el.closest("section.section");
+      const wrap = el.closest(".pricewrap");
+      if (!wrap) return;
+
+      openSection(section);
+      openRow(tr);
+
+      if (litWrap && litWrap !== wrap) clearLit();
+      if (wrap.classList.contains("lit")){
+        wrap.classList.remove("lit");
+        litWrap = null;
+      } else {
+        wrap.classList.add("lit");
+        litWrap = wrap;
+      }
+    }, {passive:false});
+  });
+
+  // 3 puis 4) Avec lien : 1 clic = lit, 2 clic = open + recache la ligne
+  document.querySelectorAll("[data-pay='1']").forEach(a => {
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const tr = a.closest("tr");
+      const section = a.closest("section.section");
+      const wrap = a.closest(".pricewrap");
+      openSection(section);
+      openRow(tr);
+
+      const url = a.getAttribute("data-url") || a.getAttribute("href");
+      if (!url || !wrap) return;
+
+      if (!wrap.classList.contains("lit")){
+        if (litWrap && litWrap !== wrap) clearLit();
+        wrap.classList.add("lit");
+        litWrap = wrap;
+        return;
+      }
+
+      window.open(url, "_blank", "noopener");
+      wrap.classList.remove("lit");
+      litWrap = null;
+      if (tr) tr.classList.remove("open");
+    }, {passive:false});
+  });
+})();</script>
+</body>
+</html>
