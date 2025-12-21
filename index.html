@@ -56,15 +56,12 @@ body{
 }
 .section.open h2{ color:#8f8f8f; }
 
-/* === RITE LICENTIA (AJOUT) === */
-.section h2.licentia{
-  cursor:pointer;
-}
+/* === RITE LICENTIA === */
+.section h2.licentia{ cursor:pointer; }
 .section h2.licentia.active{
   color:#ffffff !important;
   text-shadow: 0 0 14px #ffffff22;
 }
-/* === FIN AJOUT === */
 
 /* Table */
 table{width:100%; border-collapse:collapse; border-radius:14px; overflow:hidden}
@@ -130,7 +127,7 @@ tr.open .rowname{ color:#bdbdbd; }
   user-select:none;
 }
 
-/* ===== FIX CURSEUR (AJOUT) ===== */
+/* ===== FIX CURSEUR ===== */
 .pricewrap,
 .pay,
 .pay.infoPay{
@@ -143,7 +140,6 @@ tr.open .rowname{ color:#bdbdbd; }
   user-select: none;
   -webkit-user-select: none;
 }
-/* ===== FIN FIX ===== */
 
 /* Fantômes */
 tr.open .pay{ color:#141414; }
@@ -216,42 +212,15 @@ tr.open .pricewrap.lit .sep,
       <table>
         <thead><tr><th>Nom</th><th>Air.mm</th><th>Air.m</th><th>Air.km</th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="rowname">Air.Dies1.0</span></td>
-            <td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies2.0</span></td>
-            <td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies3.0</span></td>
-            <td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies4.0</span></td>
-            <td><span class="pay infoPay">2</span></td><td><span class="pay infoPay">4</span></td><td><span class="pay infoPay">8</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies5.0</span></td>
-            <td><span class="pay infoPay">3</span></td><td><span class="pay infoPay">9</span></td><td><span class="pay infoPay">27</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies6.0</span></td>
-            <td><span class="pay infoPay">5</span></td><td><span class="pay infoPay">25</span></td><td><span class="pay infoPay">125</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies7.0</span></td>
-            <td><span class="pay infoPay">8</span></td><td><span class="pay infoPay">64</span></td><td><span class="pay infoPay">512</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies8.0</span></td>
-            <td><span class="pay infoPay">13</span></td><td><span class="pay infoPay">169</span></td><td><span class="pay infoPay">2&nbsp;197</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Dies9.0</span></td>
-            <td><span class="pay infoPay">21</span></td><td><span class="pay infoPay">441</span></td><td><span class="pay infoPay">9&nbsp;261</span></td>
-          </tr>
+          <tr><td><span class="rowname">Air.Dies1.0</span></td><td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies2.0</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies3.0</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies4.0</span></td><td><span class="pay infoPay">2</span></td><td><span class="pay infoPay">4</span></td><td><span class="pay infoPay">8</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies5.0</span></td><td><span class="pay infoPay">3</span></td><td><span class="pay infoPay">9</span></td><td><span class="pay infoPay">27</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies6.0</span></td><td><span class="pay infoPay">5</span></td><td><span class="pay infoPay">25</span></td><td><span class="pay infoPay">125</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies7.0</span></td><td><span class="pay infoPay">8</span></td><td><span class="pay infoPay">64</span></td><td><span class="pay infoPay">512</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies8.0</span></td><td><span class="pay infoPay">13</span></td><td><span class="pay infoPay">169</span></td><td><span class="pay infoPay">2&nbsp;197</span></td></tr>
+          <tr><td><span class="rowname">Air.Dies9.0</span></td><td><span class="pay infoPay">21</span></td><td><span class="pay infoPay">441</span></td><td><span class="pay infoPay">9&nbsp;261</span></td></tr>
         </tbody>
       </table>
     </section>
@@ -261,42 +230,15 @@ tr.open .pricewrap.lit .sep,
       <table>
         <thead><tr><th>Nom</th><th>Air.sec</th><th>Air.min</th><th>Air.h</th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="rowname">Air.Nox1.0</span></td>
-            <td><span class="pay infoPay">34</span></td><td><span class="pay infoPay">1&nbsp;156</span></td><td><span class="pay infoPay">39&nbsp;304</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox2.0</span></td>
-            <td><span class="pay infoPay">55</span></td><td><span class="pay infoPay">3&nbsp;025</span></td><td><span class="pay infoPay">166&nbsp;375</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox3.0</span></td>
-            <td><span class="pay infoPay">89</span></td><td><span class="pay infoPay">7&nbsp;921</span></td><td><span class="pay infoPay">704&nbsp;969</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox4.0</span></td>
-            <td><span class="pay infoPay">144</span></td><td><span class="pay infoPay">20&nbsp;736</span></td><td><span class="pay infoPay">2&nbsp;985&nbsp;984</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox5.0</span></td>
-            <td><span class="pay infoPay">233</span></td><td><span class="pay infoPay">54&nbsp;289</span></td><td><span class="pay infoPay">12&nbsp;649&nbsp;337</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox6.0</span></td>
-            <td><span class="pay infoPay">377</span></td><td><span class="pay infoPay">142&nbsp;129</span></td><td><span class="pay infoPay">53&nbsp;582&nbsp;633</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox7.0</span></td>
-            <td><span class="pay infoPay">610</span></td><td><span class="pay infoPay">372&nbsp;100</span></td><td><span class="pay infoPay">226&nbsp;981&nbsp;000</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox8.0</span></td>
-            <td><span class="pay infoPay">987</span></td><td><span class="pay infoPay">974&nbsp;169</span></td><td><span class="pay infoPay">961&nbsp;504&nbsp;803</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Nox9.0</span></td>
-            <td><span class="pay infoPay">1&nbsp;597</span></td><td><span class="pay infoPay">2&nbsp;550&nbsp;409</span></td><td><span class="pay infoPay">4&nbsp;073&nbsp;676&nbsp;409</span></td>
-          </tr>
+          <tr><td><span class="rowname">Air.Nox1.0</span></td><td><span class="pay infoPay">34</span></td><td><span class="pay infoPay">1&nbsp;156</span></td><td><span class="pay infoPay">39&nbsp;304</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox2.0</span></td><td><span class="pay infoPay">55</span></td><td><span class="pay infoPay">3&nbsp;025</span></td><td><span class="pay infoPay">166&nbsp;375</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox3.0</span></td><td><span class="pay infoPay">89</span></td><td><span class="pay infoPay">7&nbsp;921</span></td><td><span class="pay infoPay">704&nbsp;969</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox4.0</span></td><td><span class="pay infoPay">144</span></td><td><span class="pay infoPay">20&nbsp;736</span></td><td><span class="pay infoPay">2&nbsp;985&nbsp;984</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox5.0</span></td><td><span class="pay infoPay">233</span></td><td><span class="pay infoPay">54&nbsp;289</span></td><td><span class="pay infoPay">12&nbsp;649&nbsp;337</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox6.0</span></td><td><span class="pay infoPay">377</span></td><td><span class="pay infoPay">142&nbsp;129</span></td><td><span class="pay infoPay">53&nbsp;582&nbsp;633</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox7.0</span></td><td><span class="pay infoPay">610</span></td><td><span class="pay infoPay">372&nbsp;100</span></td><td><span class="pay infoPay">226&nbsp;981&nbsp;000</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox8.0</span></td><td><span class="pay infoPay">987</span></td><td><span class="pay infoPay">974&nbsp;169</span></td><td><span class="pay infoPay">961&nbsp;504&nbsp;803</span></td></tr>
+          <tr><td><span class="rowname">Air.Nox9.0</span></td><td><span class="pay infoPay">1&nbsp;597</span></td><td><span class="pay infoPay">2&nbsp;550&nbsp;409</span></td><td><span class="pay infoPay">4&nbsp;073&nbsp;676&nbsp;409</span></td></tr>
         </tbody>
       </table>
     </section>
@@ -306,42 +248,15 @@ tr.open .pricewrap.lit .sep,
       <table>
         <thead><tr><th>Nom</th><th>Air.mm-sec</th><th>Air.m-min</th><th>Air.km-h</th></tr></thead>
         <tbody>
-          <tr>
-            <td><span class="rowname">Air.Lux1.0</span></td>
-            <td><span class="pay infoPay">2&nbsp;584</span></td><td><span class="pay infoPay">6&nbsp;676&nbsp;225</span></td><td><span class="pay infoPay">17&nbsp;258&nbsp;883&nbsp;125</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux2.0</span></td>
-            <td><span class="pay infoPay">4&nbsp;181</span></td><td><span class="pay infoPay">17&nbsp;480&nbsp;761</span></td><td><span class="pay infoPay">73&nbsp;113&nbsp;611&nbsp;641</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux3.0</span></td>
-            <td><span class="pay infoPay">6&nbsp;765</span></td><td><span class="pay infoPay">45&nbsp;765&nbsp;625</span></td><td><span class="pay infoPay">309&nbsp;787&nbsp;365&nbsp;927</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux4.0</span></td>
-            <td><span class="pay infoPay">10&nbsp;946</span></td><td><span class="pay infoPay">119&nbsp;814&nbsp;916</span></td><td><span class="pay infoPay">1&nbsp;312&nbsp;153&nbsp;474&nbsp;611</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux5.0</span></td>
-            <td><span class="pay infoPay">17&nbsp;711</span></td><td><span class="pay infoPay">313&nbsp;679&nbsp;521</span></td><td><span class="pay infoPay">5&nbsp;559&nbsp;060&nbsp;566&nbsp;555</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux6.0</span></td>
-            <td><span class="pay infoPay">28&nbsp;657</span></td><td><span class="pay infoPay">821&nbsp;223&nbsp;649</span></td><td><span class="pay infoPay">23&nbsp;561&nbsp;844&nbsp;590&nbsp;383</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux7.0</span></td>
-            <td><span class="pay infoPay">46&nbsp;368</span></td><td><span class="pay infoPay">2&nbsp;149&nbsp;911&nbsp;424</span></td><td><span class="pay infoPay">99&nbsp;888&nbsp;658&nbsp;365&nbsp;125</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux8.0</span></td>
-            <td><span class="pay infoPay">75&nbsp;025</span></td><td><span class="pay infoPay">5&nbsp;628&nbsp;750&nbsp;625</span></td><td><span class="pay infoPay">423&nbsp;429&nbsp;431&nbsp;486&nbsp;121</span></td>
-          </tr>
-          <tr>
-            <td><span class="rowname">Air.Lux9.0</span></td>
-            <td><span class="pay infoPay">121&nbsp;393</span></td><td><span class="pay infoPay">14&nbsp;736&nbsp;200&nbsp;449</span></td><td><span class="pay infoPay">1&nbsp;794&nbsp;317&nbsp;945&nbsp;976&nbsp;784</span></td>
-          </tr>
+          <tr><td><span class="rowname">Air.Lux1.0</span></td><td><span class="pay infoPay">2&nbsp;584</span></td><td><span class="pay infoPay">6&nbsp;676&nbsp;225</span></td><td><span class="pay infoPay">17&nbsp;258&nbsp;883&nbsp;125</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux2.0</span></td><td><span class="pay infoPay">4&nbsp;181</span></td><td><span class="pay infoPay">17&nbsp;480&nbsp;761</span></td><td><span class="pay infoPay">73&nbsp;113&nbsp;611&nbsp;641</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux3.0</span></td><td><span class="pay infoPay">6&nbsp;765</span></td><td><span class="pay infoPay">45&nbsp;765&nbsp;625</span></td><td><span class="pay infoPay">309&nbsp;787&nbsp;365&nbsp;927</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux4.0</span></td><td><span class="pay infoPay">10&nbsp;946</span></td><td><span class="pay infoPay">119&nbsp;814&nbsp;916</span></td><td><span class="pay infoPay">1&nbsp;312&nbsp;153&nbsp;474&nbsp;611</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux5.0</span></td><td><span class="pay infoPay">17&nbsp;711</span></td><td><span class="pay infoPay">313&nbsp;679&nbsp;521</span></td><td><span class="pay infoPay">5&nbsp;559&nbsp;060&nbsp;566&nbsp;555</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux6.0</span></td><td><span class="pay infoPay">28&nbsp;657</span></td><td><span class="pay infoPay">821&nbsp;223&nbsp;649</span></td><td><span class="pay infoPay">23&nbsp;561&nbsp;844&nbsp;590&nbsp;383</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux7.0</span></td><td><span class="pay infoPay">46&nbsp;368</span></td><td><span class="pay infoPay">2&nbsp;149&nbsp;911&nbsp;424</span></td><td><span class="pay infoPay">99&nbsp;888&nbsp;658&nbsp;365&nbsp;125</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux8.0</span></td><td><span class="pay infoPay">75&nbsp;025</span></td><td><span class="pay infoPay">5&nbsp;628&nbsp;750&nbsp;625</span></td><td><span class="pay infoPay">423&nbsp;429&nbsp;431&nbsp;486&nbsp;121</span></td></tr>
+          <tr><td><span class="rowname">Air.Lux9.0</span></td><td><span class="pay infoPay">121&nbsp;393</span></td><td><span class="pay infoPay">14&nbsp;736&nbsp;200&nbsp;449</span></td><td><span class="pay infoPay">1&nbsp;794&nbsp;317&nbsp;945&nbsp;976&nbsp;784</span></td></tr>
         </tbody>
       </table>
     </section>
@@ -446,7 +361,7 @@ tr.open .pricewrap.lit .sep,
     }, {passive:false});
   });
 
-  // 3 puis 4) Avec lien (9x9)
+  // 3 puis 4) Avec lien (9x9) — conservé (tu peux l’utiliser plus tard)
   document.querySelectorAll("[data-pay='1']").forEach(a => {
     a.addEventListener("click", (e) => {
       e.preventDefault();
@@ -475,8 +390,10 @@ tr.open .pricewrap.lit .sep,
     }, {passive:false});
   });
 
-  // === RITE DES 4 LICENTIA (AJOUT) ===
-  const memberFile = "Air9x9_member_active.air"; // <-- change le nom ici si besoin
+  // === RITE DES 4 LICENTIA : télécharge le module actif (sans modifier le code ensuite) ===
+  // Place ton fichier ici dans le repo :  actifs/membre/module.zip
+  // (Tu remplaces le zip quand tu veux. Le ?v=Date.now() évite le cache.)
+  const memberFile = "actifs/membre/module.zip?v=" + Date.now();
   const licentiaTitles = document.querySelectorAll("h2.licentia[data-licentia]");
 
   function allLicentiaActive(){
@@ -486,7 +403,7 @@ tr.open .pricewrap.lit .sep,
   function triggerMemberDownload(){
     const a = document.createElement("a");
     a.href = memberFile;
-    a.download = memberFile.split("/").pop();
+    a.download = "module.zip";
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -494,7 +411,7 @@ tr.open .pricewrap.lit .sep,
 
   licentiaTitles.forEach(h2 => {
     h2.addEventListener("click", (e) => {
-      // Important: sinon ton handler de section va toggle open/close
+      // Bloque le toggle de section sur clic titre (sinon ça bouge tout)
       e.preventDefault();
       e.stopPropagation();
 
@@ -502,11 +419,11 @@ tr.open .pricewrap.lit .sep,
 
       if (allLicentiaActive()){
         triggerMemberDownload();
+        // reset après déclenchement
         licentiaTitles.forEach(x => x.classList.remove("active"));
       }
     }, { passive:false });
   });
-  // === FIN AJOUT ===
 
 })();
   </script>
