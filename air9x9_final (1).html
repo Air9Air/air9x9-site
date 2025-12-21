@@ -93,7 +93,7 @@ tbody tr.open td{
 .rowname{ color:#000000; letter-spacing:.02em; user-select:none; }
 tr.open .rowname{ color:#bdbdbd; }
 
-/* Prix + durée inline */
+/* Prix + durée inline (9x9) */
 .pricewrap{
   display:inline-flex;
   align-items:baseline;
@@ -116,6 +116,7 @@ tr.open .rowname{ color:#bdbdbd; }
   letter-spacing:.03em;
   color:#000000;
   text-decoration:none;
+  user-select:none;
 }
 
 /* Fantômes */
@@ -125,7 +126,9 @@ tr.open .sep{ color:#0f0f0f; }
 
 /* Lit (bat le fantôme) */
 tr.open .pricewrap.lit .pay,
-.pricewrap.lit .pay{
+.pricewrap.lit .pay,
+tr.open .pay.lit,
+.pay.lit{
   color:#ffffff;
   text-shadow: 0 0 16px #111111;
 }
@@ -178,47 +181,47 @@ tr.open .pricewrap.lit .sep,
         <tbody>
       <tr>
         <td><span class="rowname">Air.Dies1.0</span></td>
-        <td><span class="pay">0</span></td><td><span class="pay">0</span></td><td><span class="pay">0</span></td>
+        <td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td><td><span class="pay infoPay">0</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies2.0</span></td>
-        <td><span class="pay">1</span></td><td><span class="pay">1</span></td><td><span class="pay">1</span></td>
+        <td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies3.0</span></td>
-        <td><span class="pay">1</span></td><td><span class="pay">1</span></td><td><span class="pay">1</span></td>
+        <td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td><td><span class="pay infoPay">1</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies4.0</span></td>
-        <td><span class="pay">2</span></td><td><span class="pay">4</span></td><td><span class="pay">8</span></td>
+        <td><span class="pay infoPay">2</span></td><td><span class="pay infoPay">4</span></td><td><span class="pay infoPay">8</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies5.0</span></td>
-        <td><span class="pay">3</span></td><td><span class="pay">9</span></td><td><span class="pay">27</span></td>
+        <td><span class="pay infoPay">3</span></td><td><span class="pay infoPay">9</span></td><td><span class="pay infoPay">27</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies6.0</span></td>
-        <td><span class="pay">5</span></td><td><span class="pay">25</span></td><td><span class="pay">125</span></td>
+        <td><span class="pay infoPay">5</span></td><td><span class="pay infoPay">25</span></td><td><span class="pay infoPay">125</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies7.0</span></td>
-        <td><span class="pay">8</span></td><td><span class="pay">64</span></td><td><span class="pay">512</span></td>
+        <td><span class="pay infoPay">8</span></td><td><span class="pay infoPay">64</span></td><td><span class="pay infoPay">512</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies8.0</span></td>
-        <td><span class="pay">13</span></td><td><span class="pay">169</span></td><td><span class="pay">2&nbsp;197</span></td>
+        <td><span class="pay infoPay">13</span></td><td><span class="pay infoPay">169</span></td><td><span class="pay infoPay">2&nbsp;197</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Dies9.0</span></td>
-        <td><span class="pay">21</span></td><td><span class="pay">441</span></td><td><span class="pay">9&nbsp;261</span></td>
+        <td><span class="pay infoPay">21</span></td><td><span class="pay infoPay">441</span></td><td><span class="pay infoPay">9&nbsp;261</span></td>
       </tr>
     </tbody>
       </table>
@@ -230,47 +233,47 @@ tr.open .pricewrap.lit .sep,
         <tbody>
       <tr>
         <td><span class="rowname">Air.Nox1.0</span></td>
-        <td><span class="pay">34</span></td><td><span class="pay">1&nbsp;156</span></td><td><span class="pay">39&nbsp;304</span></td>
+        <td><span class="pay infoPay">34</span></td><td><span class="pay infoPay">1&nbsp;156</span></td><td><span class="pay infoPay">39&nbsp;304</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox2.0</span></td>
-        <td><span class="pay">55</span></td><td><span class="pay">3&nbsp;025</span></td><td><span class="pay">166&nbsp;375</span></td>
+        <td><span class="pay infoPay">55</span></td><td><span class="pay infoPay">3&nbsp;025</span></td><td><span class="pay infoPay">166&nbsp;375</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox3.0</span></td>
-        <td><span class="pay">89</span></td><td><span class="pay">7&nbsp;921</span></td><td><span class="pay">704&nbsp;969</span></td>
+        <td><span class="pay infoPay">89</span></td><td><span class="pay infoPay">7&nbsp;921</span></td><td><span class="pay infoPay">704&nbsp;969</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox4.0</span></td>
-        <td><span class="pay">144</span></td><td><span class="pay">20&nbsp;736</span></td><td><span class="pay">2&nbsp;985&nbsp;984</span></td>
+        <td><span class="pay infoPay">144</span></td><td><span class="pay infoPay">20&nbsp;736</span></td><td><span class="pay infoPay">2&nbsp;985&nbsp;984</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox5.0</span></td>
-        <td><span class="pay">233</span></td><td><span class="pay">54&nbsp;289</span></td><td><span class="pay">12&nbsp;649&nbsp;337</span></td>
+        <td><span class="pay infoPay">233</span></td><td><span class="pay infoPay">54&nbsp;289</span></td><td><span class="pay infoPay">12&nbsp;649&nbsp;337</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox6.0</span></td>
-        <td><span class="pay">377</span></td><td><span class="pay">142&nbsp;129</span></td><td><span class="pay">53&nbsp;582&nbsp;633</span></td>
+        <td><span class="pay infoPay">377</span></td><td><span class="pay infoPay">142&nbsp;129</span></td><td><span class="pay infoPay">53&nbsp;582&nbsp;633</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox7.0</span></td>
-        <td><span class="pay">610</span></td><td><span class="pay">372&nbsp;100</span></td><td><span class="pay">226&nbsp;981&nbsp;000</span></td>
+        <td><span class="pay infoPay">610</span></td><td><span class="pay infoPay">372&nbsp;100</span></td><td><span class="pay infoPay">226&nbsp;981&nbsp;000</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox8.0</span></td>
-        <td><span class="pay">987</span></td><td><span class="pay">974&nbsp;169</span></td><td><span class="pay">961&nbsp;504&nbsp;803</span></td>
+        <td><span class="pay infoPay">987</span></td><td><span class="pay infoPay">974&nbsp;169</span></td><td><span class="pay infoPay">961&nbsp;504&nbsp;803</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Nox9.0</span></td>
-        <td><span class="pay">1&nbsp;597</span></td><td><span class="pay">2&nbsp;550&nbsp;409</span></td><td><span class="pay">4&nbsp;073&nbsp;676&nbsp;409</span></td>
+        <td><span class="pay infoPay">1&nbsp;597</span></td><td><span class="pay infoPay">2&nbsp;550&nbsp;409</span></td><td><span class="pay infoPay">4&nbsp;073&nbsp;676&nbsp;409</span></td>
       </tr>
     </tbody>
       </table>
@@ -282,60 +285,59 @@ tr.open .pricewrap.lit .sep,
         <tbody>
       <tr>
         <td><span class="rowname">Air.Lux1.0</span></td>
-        <td><span class="pay">2&nbsp;584</span></td><td><span class="pay">6&nbsp;676&nbsp;225</span></td><td><span class="pay">17&nbsp;258&nbsp;883&nbsp;125</span></td>
+        <td><span class="pay infoPay">2&nbsp;584</span></td><td><span class="pay infoPay">6&nbsp;676&nbsp;225</span></td><td><span class="pay infoPay">17&nbsp;258&nbsp;883&nbsp;125</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux2.0</span></td>
-        <td><span class="pay">4&nbsp;181</span></td><td><span class="pay">17&nbsp;480&nbsp;761</span></td><td><span class="pay">73&nbsp;113&nbsp;611&nbsp;641</span></td>
+        <td><span class="pay infoPay">4&nbsp;181</span></td><td><span class="pay infoPay">17&nbsp;480&nbsp;761</span></td><td><span class="pay infoPay">73&nbsp;113&nbsp;611&nbsp;641</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux3.0</span></td>
-        <td><span class="pay">6&nbsp;765</span></td><td><span class="pay">45&nbsp;765&nbsp;625</span></td><td><span class="pay">309&nbsp;787&nbsp;365&nbsp;927</span></td>
+        <td><span class="pay infoPay">6&nbsp;765</span></td><td><span class="pay infoPay">45&nbsp;765&nbsp;625</span></td><td><span class="pay infoPay">309&nbsp;787&nbsp;365&nbsp;927</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux4.0</span></td>
-        <td><span class="pay">10&nbsp;946</span></td><td><span class="pay">119&nbsp;814&nbsp;916</span></td><td><span class="pay">1&nbsp;312&nbsp;153&nbsp;474&nbsp;611</span></td>
+        <td><span class="pay infoPay">10&nbsp;946</span></td><td><span class="pay infoPay">119&nbsp;814&nbsp;916</span></td><td><span class="pay infoPay">1&nbsp;312&nbsp;153&nbsp;474&nbsp;611</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux5.0</span></td>
-        <td><span class="pay">17&nbsp;711</span></td><td><span class="pay">313&nbsp;679&nbsp;521</span></td><td><span class="pay">5&nbsp;559&nbsp;060&nbsp;566&nbsp;555</span></td>
+        <td><span class="pay infoPay">17&nbsp;711</span></td><td><span class="pay infoPay">313&nbsp;679&nbsp;521</span></td><td><span class="pay infoPay">5&nbsp;559&nbsp;060&nbsp;566&nbsp;555</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux6.0</span></td>
-        <td><span class="pay">28&nbsp;657</span></td><td><span class="pay">821&nbsp;223&nbsp;649</span></td><td><span class="pay">23&nbsp;561&nbsp;844&nbsp;590&nbsp;383</span></td>
+        <td><span class="pay infoPay">28&nbsp;657</span></td><td><span class="pay infoPay">821&nbsp;223&nbsp;649</span></td><td><span class="pay infoPay">23&nbsp;561&nbsp;844&nbsp;590&nbsp;383</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux7.0</span></td>
-        <td><span class="pay">46&nbsp;368</span></td><td><span class="pay">2&nbsp;149&nbsp;911&nbsp;424</span></td><td><span class="pay">99&nbsp;888&nbsp;658&nbsp;365&nbsp;125</span></td>
+        <td><span class="pay infoPay">46&nbsp;368</span></td><td><span class="pay infoPay">2&nbsp;149&nbsp;911&nbsp;424</span></td><td><span class="pay infoPay">99&nbsp;888&nbsp;658&nbsp;365&nbsp;125</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux8.0</span></td>
-        <td><span class="pay">75&nbsp;025</span></td><td><span class="pay">5&nbsp;628&nbsp;750&nbsp;625</span></td><td><span class="pay">423&nbsp;429&nbsp;431&nbsp;486&nbsp;121</span></td>
+        <td><span class="pay infoPay">75&nbsp;025</span></td><td><span class="pay infoPay">5&nbsp;628&nbsp;750&nbsp;625</span></td><td><span class="pay infoPay">423&nbsp;429&nbsp;431&nbsp;486&nbsp;121</span></td>
       </tr>
     
       <tr>
         <td><span class="rowname">Air.Lux9.0</span></td>
-        <td><span class="pay">121&nbsp;393</span></td><td><span class="pay">14&nbsp;736&nbsp;200&nbsp;449</span></td><td><span class="pay">1&nbsp;794&nbsp;317&nbsp;945&nbsp;976&nbsp;784</span></td>
+        <td><span class="pay infoPay">121&nbsp;393</span></td><td><span class="pay infoPay">14&nbsp;736&nbsp;200&nbsp;449</span></td><td><span class="pay infoPay">1&nbsp;794&nbsp;317&nbsp;945&nbsp;976&nbsp;784</span></td>
       </tr>
     </tbody>
       </table>
     </section>
   </div>
   <script>(function(){
-  let litWrap = null;
+  let litWrap = null; // pour 9x9
+  let litPay = null;  // pour tableaux info
 
   function clearLit(){
-    if (litWrap){
-      litWrap.classList.remove("lit");
-      litWrap = null;
-    }
+    if (litWrap){ litWrap.classList.remove("lit"); litWrap = null; }
+    if (litPay){ litPay.classList.remove("lit"); litPay = null; }
   }
   function openSection(section){ if (section) section.classList.add("open"); }
   function toggleSection(section){ if (section) section.classList.toggle("open"); }
@@ -343,7 +345,10 @@ tr.open .pricewrap.lit .sep,
   function toggleRow(tr){
     if (!tr) return;
     tr.classList.toggle("open");
-    if (!tr.classList.contains("open") && litWrap && tr.contains(litWrap)) clearLit();
+    if (!tr.classList.contains("open")){
+      if (litWrap && tr.contains(litWrap)) { litWrap.classList.remove("lit"); litWrap = null; }
+      if (litPay && tr.contains(litPay)) { litPay.classList.remove("lit"); litPay = null; }
+    }
   }
 
   // 1) Section toggle (clic hors tbody)
@@ -363,11 +368,11 @@ tr.open .pricewrap.lit .sep,
     }, {passive:false});
   });
 
-  // 2) Ligne toggle
+  // 2) Ligne toggle (clic hors chiffres)
   document.querySelectorAll("section.section tbody tr").forEach(tr => {
     tr.addEventListener("click", (e) => {
-      if (e.target && e.target.closest && e.target.closest("[data-pay='1']")) return;
       if (e.target && e.target.classList && e.target.classList.contains("pay")) return;
+      if (e.target && e.target.closest && e.target.closest("[data-pay='1']")) return;
 
       const section = tr.closest("section.section");
       openSection(section);
@@ -375,8 +380,35 @@ tr.open .pricewrap.lit .sep,
     }, {passive:false});
   });
 
-  // 3) Sans lien : lit sur wrapper
+  // 3) Chiffres tableaux info : clic = lit ON/OFF
+  document.querySelectorAll(".infoPay").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const tr = el.closest("tr");
+      const section = el.closest("section.section");
+      openSection(section);
+      openRow(tr);
+
+      // un seul “lit” à la fois dans les tableaux info (propre)
+      if (litPay && litPay !== el){ litPay.classList.remove("lit"); litPay = null; }
+
+      if (el.classList.contains("lit")){
+        el.classList.remove("lit");
+        litPay = null;
+      } else {
+        el.classList.add("lit");
+        litPay = el;
+      }
+    }, {passive:false});
+  });
+
+  // 3) Sans lien (9x9) : lit sur wrapper
   document.querySelectorAll("section.section .pay:not([data-pay='1'])").forEach(el => {
+    // éviter de doubler l’event sur infoPay
+    if (el.classList.contains("infoPay")) return;
+
     el.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -388,7 +420,7 @@ tr.open .pricewrap.lit .sep,
       openSection(section);
       openRow(tr);
 
-      if (litWrap && litWrap !== wrap) clearLit();
+      if (litWrap && litWrap !== wrap){ litWrap.classList.remove("lit"); litWrap = null; }
       if (wrap.classList.contains("lit")){
         wrap.classList.remove("lit");
         litWrap = null;
@@ -399,7 +431,7 @@ tr.open .pricewrap.lit .sep,
     }, {passive:false});
   });
 
-  // 3 puis 4) Avec lien : 1 clic = lit, 2 clic = open + recache la ligne
+  // 3 puis 4) Avec lien (9x9)
   document.querySelectorAll("[data-pay='1']").forEach(a => {
     a.addEventListener("click", (e) => {
       e.preventDefault();
@@ -415,7 +447,7 @@ tr.open .pricewrap.lit .sep,
       if (!url || !wrap) return;
 
       if (!wrap.classList.contains("lit")){
-        if (litWrap && litWrap !== wrap) clearLit();
+        if (litWrap && litWrap !== wrap){ litWrap.classList.remove("lit"); litWrap = null; }
         wrap.classList.add("lit");
         litWrap = wrap;
         return;
